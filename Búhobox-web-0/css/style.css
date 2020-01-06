@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  background-color: #220E47 !important; }
+
+#logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fill-anim 0.2s ease forwards 1.3s; }
+  #logo path:nth-child(1) {
+    stroke-dasharray: 977;
+    stroke-dashoffset: 977;
+    animation: line-anim 2s ease forwards 0.4s; }
+  #logo path:nth-child(2) {
+    stroke-dasharray: 709;
+    stroke-dashoffset: 709;
+    animation: line-anim 2s ease forwards 0.3s; }
+  #logo path:nth-child(3) {
+    stroke-dasharray: 489;
+    stroke-dashoffset: 489;
+    animation: line-anim 2s ease forwards 0.2s; }
+@keyframes line-anim {
+  100% {
+    stroke-dashoffset: 0; } }
+@keyframes fill-anim {
+  0% {
+    fill: #0000; }
+  100% {
+    fill: #fff; } }
+
